@@ -64,5 +64,6 @@
     "gpu_prediction_identity": false,
     "independent_clean_environment_install": false
   },
-  "status": "private preview preparation; pending verification is explicit"
+  "status": "private preview preparation; pending verification is explicit",
+  "publication_scope": "MAHENet method and reproduction materials explicitly promised in the reviewer response; no baseline or ablation release."
 }

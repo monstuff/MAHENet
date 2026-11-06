@@ -11,66 +11,6 @@
       "macc": 0.7319605592238226,
       "bf1": 0.7254216330421333,
       "real_epochs": 20
-    },
-    {
-      "method": "VMamba-T + UPerNet",
-      "split": "validation",
-      "selected_epoch": 17,
-      "miou": 0.5912548227268739,
-      "pacc": 0.8263984176845952,
-      "macc": 0.7086314983660433,
-      "bf1": 0.6656856387034432,
-      "real_epochs": 20
-    },
-    {
-      "method": "SegMAN-S",
-      "split": "validation",
-      "selected_epoch": 18,
-      "miou": 0.5755256008651078,
-      "pacc": 0.818751841553819,
-      "macc": 0.7006961707843494,
-      "bf1": 0.5968888764612137,
-      "real_epochs": 20
-    },
-    {
-      "method": "VSSD-Tiny",
-      "split": "validation",
-      "selected_epoch": 16,
-      "miou": 0.5775586991229195,
-      "pacc": 0.8210983865208292,
-      "macc": 0.7146663180269839,
-      "bf1": 0.6528255153596525,
-      "real_epochs": 20
-    },
-    {
-      "method": "EoMT",
-      "split": "validation",
-      "selected_epoch": 19,
-      "miou": 0.5896859790042057,
-      "pacc": 0.8266604064295668,
-      "macc": 0.7132324063500229,
-      "bf1": 0.6383070330754602,
-      "real_epochs": 20
-    },
-    {
-      "method": "DeepLabV3+-ResNet50",
-      "split": "validation",
-      "selected_epoch": 20,
-      "miou": 0.5123386005137777,
-      "pacc": 0.7789960390083842,
-      "macc": 0.6472207628037935,
-      "bf1": 0.5159204199681173,
-      "real_epochs": 20
-    },
-    {
-      "method": "MMSFormer (RGB)",
-      "split": "validation",
-      "selected_epoch": 18,
-      "miou": 0.5909996380026523,
-      "pacc": 0.8280614111206553,
-      "macc": 0.7132032397999652,
-      "bf1": 0.6376456257637947,
-      "real_epochs": 20
     }
   ],
   "heldout_test_results": "pending unified evaluation"
