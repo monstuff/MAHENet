@@ -1,5 +1,5 @@
 {
-  "release_status": "private draft",
+  "release_status": "preview",
   "weights": [
     {
       "name": "mahenet_dms37.pth",
@@ -16,8 +16,7 @@
       "model_state_exact": true,
       "source_checkpoint_sha256": "15fcc027767359c497a07dec65872b2ac8fbda6594105bb0eb482963e2e3b25a",
       "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/mahenet_dms37.pth",
-      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717152009",
-      "draft_download_url": "https://github.com/monstuff/MAHENet/releases/download/untagged-c7afde8730a28348e004/mahenet_dms37.pth"
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717152009"
     },
     {
       "name": "global_branch.pth",
@@ -34,8 +33,7 @@
       "model_state_exact": true,
       "source_checkpoint_sha256": "a6f3705522ea0932cbe2c580d7fe8075c20d9de44efaa3c31d1f502ff243a89d",
       "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/global_branch.pth",
-      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717153412",
-      "draft_download_url": "https://github.com/monstuff/MAHENet/releases/download/untagged-c7afde8730a28348e004/global_branch.pth"
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717153412"
     },
     {
       "name": "local_expert.pth",
@@ -52,8 +50,7 @@
       "model_state_exact": true,
       "source_checkpoint_sha256": "39aceda2e6af94a95c7294487bb5a13ea5fef38c0ab8f79f3c6163236ebcd66f",
       "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/local_expert.pth",
-      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717154617",
-      "draft_download_url": "https://github.com/monstuff/MAHENet/releases/download/untagged-c7afde8730a28348e004/local_expert.pth"
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717154617"
     }
   ],
   "encoder": {
