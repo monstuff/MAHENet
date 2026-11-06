@@ -1,0 +1,91 @@
+{
+  "seed": 3407,
+  "phase": "formal",
+  "classes": 37,
+  "protocol_sha256": "1bdd1aa47fede95753f0cec2ded081a08e31e226e1f9cfc9386dacc18ec9fa9c",
+  "manifest_sha256": "ef984dd9704096dd0a4e926c260f73f9c759fe1e1a0a4b0a1ab2fcd2302fcae5",
+  "pretrained_sha256": "853f5719558dffcf8a629f4eb07b18914e397dc33f122525b1e2933d138cd545",
+  "data": {
+    "root": "data/DMS_v1",
+    "manifest": "protocol/splits.json",
+    "label_protocol": "dms37",
+    "image_size": 512,
+    "resize_policy": "aspect_ratio_letterbox"
+  },
+  "model": {
+    "name": "VSSD-Tiny",
+    "pretrained_checkpoint": "weights/vssd_tiny_mesa.pth"
+  },
+  "loss": {
+    "loss_kind": "upernet",
+    "alpha": 0.5,
+    "dice_weight": 0.5,
+    "edge_weight": 0.0,
+    "auxiliary_weight": 0.4,
+    "label_smoothing": 0.0,
+    "class_weights": [
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "training": {
+    "epochs": 20,
+    "world_size": 2,
+    "per_gpu_batch_size": 12,
+    "accumulation": 1,
+    "workers": 4,
+    "backbone_lr": 5e-05,
+    "head_lr": 0.0005,
+    "warmup_steps": 250,
+    "weight_decay": 0.0001,
+    "precision": "float32"
+  },
+  "architecture": {
+    "encoder": "Unmodified author Backbone_VMAMBA2, ICCV2025 Tiny: dim96,depths2/2/8/2,async12/24/48/64,RoPE,CPE,normalized NC-SSD",
+    "decoder": "Author UPerHead512 + FCN auxiliary256, pool1/2/3/6, 37 output classes",
+    "source_commit": "c10de2f8b717a04459b09cbd651de2e768f302c8",
+    "implementation": "Original NC-SSD author tensor operators; no substitute causal scan or simplified backbone",
+    "checkpointing": false
+  },
+  "variant": "vssd",
+  "experiment": {
+    "data_strategy": "crop25",
+    "structure": "author_vssd_upernet",
+    "baseline": true
+  }
+}

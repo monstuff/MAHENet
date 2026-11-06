@@ -1,0 +1,89 @@
+{
+  "seed": 3407,
+  "phase": "formal",
+  "classes": 37,
+  "protocol_sha256": "1bdd1aa47fede95753f0cec2ded081a08e31e226e1f9cfc9386dacc18ec9fa9c",
+  "manifest_sha256": "ef984dd9704096dd0a4e926c260f73f9c759fe1e1a0a4b0a1ab2fcd2302fcae5",
+  "pretrained_sha256": "be12d9954e49a12266913018d5565261825c53c530cf8a0ba0fdb05e4ea33059",
+  "data": {
+    "root": "data/DMS_v1",
+    "manifest": "protocol/splits.json",
+    "label_protocol": "dms37",
+    "image_size": 512,
+    "resize_policy": "aspect_ratio_letterbox"
+  },
+  "model": {
+    "name": "SegMAN-S",
+    "pretrained_checkpoint": "weights/SegMAN_Encoder_s.pth.tar"
+  },
+  "loss": {
+    "alpha": 0.5,
+    "edge_weight": 0.0,
+    "class_weights": [
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "weighting": "Training pixel support <1 million gets weight 3; all other classes weight 1; weighted-mean CE only",
+    "loss_kind": "segman",
+    "auxiliary_weight": 0.0,
+    "label_smoothing": 0.0
+  },
+  "training": {
+    "epochs": 20,
+    "world_size": 2,
+    "per_gpu_batch_size": 12,
+    "accumulation": 1,
+    "workers": 4,
+    "backbone_lr": 5e-05,
+    "head_lr": 0.0005,
+    "warmup_steps": 250,
+    "weight_decay": 0.0001,
+    "precision": "float32"
+  },
+  "architecture": {
+    "kind": "full author SegMAN-S encoder and decoder",
+    "author_recipe_reproduced": false
+  },
+  "variant": "segman_s",
+  "experiment": {
+    "data_strategy": "crop25",
+    "structure": "segman_s",
+    "baseline": true,
+    "fusion_site": "unchanged"
+  }
+}
